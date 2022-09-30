@@ -1,0 +1,48 @@
+
+/*
+
+ program : PRINT CALCULATION OF USERS CHOICE
+ @author : NISHITA MANGLA
+ @DATE : 29-09-2022
+
+ */
+
+package corejava;
+
+import java.util.Scanner;
+
+class Calculation 	//declaring class
+{
+
+	public static void main(String[] args) 	//calling main method
+	{
+		
+		Scanner s = new Scanner (System.in);  //creating object of Scanner class
+		
+		System.out.println(" Enter first number as operand" );	//taking input from user
+		int a = s.nextInt();
+
+		System.out.println(" Enter second number as operand" );	//taking input from user
+		int b = s.nextInt();
+
+		 System.out.println(" Enter third number as operator" );    //taking input from user
+		int c = s.nextInt();
+		
+		System.out.println(" enter a number of your choice" );	//user choose the number
+		int op  = s.nextInt();
+
+		// using nested if statement
+		
+		if (op==1)
+			System.out.println("Addition is : " +(a+b));	//printing addition of two numbers
+		if (op==2)
+			System.out.println("subtration is : " +(a-b));	//printing subtraction of two numbers
+		if (op==3)
+			System.out.println("Multiplication is : " +(a*b));	//printing multiplication of two numbers
+		if (op==4)
+			System.out.println("Division is : " +(a/b));	//printing division of two numbers
+		else
+			System.out.println("invalid number");  //printing default statement
+	}
+
+}
